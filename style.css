@@ -2,6 +2,7 @@ html,
 body {
   margin: 0;
   height: 100%;
+  max-width: 100%;
 }
 
 p {
@@ -47,10 +48,6 @@ p {
 /* Paslepiam checkboxą */
 #menu-toggle {
   display: none;
-}
-
-.top-nav .menu a {
-  /*display: none;*/
 }
 
 .menu-button,
@@ -137,22 +134,36 @@ p {
 .menu > li:not(:last-child) {
   border-bottom: 1px solid #444;
 }
+/*
+.top_nft{
+     width: 300px;
+    overflow: hidden;
+}*/
 
 .top_nft_graphic {
-  float: right;
-  width: 250px;
-  height: auto;
-  display: inline;
+  position: absolute;
+  width: 300px;
+  height: 450px;
+  left: 250px;
+  top: -50px;
+  /* Kad paveikslėlis neliptų ant meniu */
+  z-index: -5;
+  overflow: hidden;
 }
 
 .launching_soon {
-  color: rgb(255, 57, 152);
+  color: #ff3998;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
 .no_other {
-  font-weight: bold;
-  font-size: 28pt;
-  width: 90%;
+  width: 274px;
+  font-weight: 900;
+  font-size: 48px;
+  /* Dark 1 */
+  color: #111111;
 }
 
 .linear_background {
@@ -167,12 +178,16 @@ p {
   font: 1.125rem "Oswald", Arial, sans-serif;
   height: 50px;
   letter-spacing: 1px;
-  margin: 0 auto;
   padding: 4px;
+  margin-left: 1rem;
   text-decoration: none;
   text-transform: uppercase;
   width: 170px;
   z-index: 2;
+  /*position: absolute;*/
+}
+
+.sign_up_div {
 }
 
 .btn:hover {
@@ -199,7 +214,15 @@ p {
 }
 
 .card_title {
-  font-size: 24pt;
+  font-size: 40px;
+  padding-top: 5rem;
+  width: 340px;
+}
+
+.card_text {
+  font-size: 20px;
+  color: #111111;
+  padding-bottom: 2rem;
 }
 
 .logos_large {
@@ -230,20 +253,78 @@ p {
 .droplet {
   grid-area: droplet;
 }
-/*
-.boom{
-    max-width: 50px;
-    object-fit: cover;
-    object-position: 100% 0;
-}
-*/
 
-.nft_series_title {
-  display: inline;
+.boom {
+  width: 137px; /* Chosen width */
+  overflow: hidden; /* Cuts off whatever goes beyond the container */
+}
+
+.nft_card {
+    width: 290px;
+}
+
+.gloop_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "gloop_series_title top_bid_title"
+    "gloop_series top_bid"
+    "gloop_no days_left";
+}
+
+.gloop_series_title {
+  grid-area: gloop_series_title;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 12px;
+  color: #ff8039;
 }
 
 .top_bid_title {
-  display: inline;
+  grid-area: top_bid_title;
+  text-transform: uppercase;
+  color: #777777;
+  font-weight: 500;
+  font-size: 12px;
+  text-align: right;
+}
+
+.gloop_series {
+  grid-area: gloop_series;
+  font-style: normal;
+  font-weight: 550;
+font-size: 20px;
+color: #111111;
+}
+
+.top_bid {
+  grid-area: top_bid;
+  font-style: normal;
+  font-weight: 550;
+font-size: 20px;
+color: #111111;
+text-align: right;
+}
+
+.gloop_no {
+  grid-area: gloop_no;
+  color: #777777;
+  font-size: 18px;
+}
+
+.days_left {
+  grid-area: days_left;
+  text-align: right;
+  color: #777777;
+  font-size: 18px;
+}
+
+footer {
+  margin: 1rem;
 }
 
 .footer_links {
@@ -319,6 +400,20 @@ p {
   grid-area: instagram;
 }
 
-.footer_launching{
-    /*display: none;*/
+.footer_launching {
+  /*display: none;*/
+}
+
+.miss_out {
+  width: 274px;
+  font-size: 20px;
+  color: #555555;
+}
+
+.no_padding {
+  padding: 0px;
+}
+
+.opensea_url {
+  font-weight: 550;
 }
