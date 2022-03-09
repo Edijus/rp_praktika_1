@@ -134,21 +134,24 @@ p {
 .menu > li:not(:last-child) {
   border-bottom: 1px solid #444;
 }
-/*
+
 .top_nft{
-     width: 300px;
-    overflow: hidden;
-}*/
+    position: relative;
+    /* Kad paveikslėlis neliptų ant meniu */
+    z-index: -5;
+}
 
 .top_nft_graphic {
   position: absolute;
-  width: 300px;
-  height: 450px;
   left: 250px;
   top: -50px;
-  /* Kad paveikslėlis neliptų ant meniu */
-  z-index: -5;
+  width: 195px;
   overflow: hidden;
+}
+
+.nft_img{
+    width: 300px;
+    height: 450px;
 }
 
 .launching_soon {
