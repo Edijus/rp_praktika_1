@@ -586,4 +586,41 @@ div.scrollmenu .nft_card {
       .bottom_nft{
           padding-bottom: 6.4rem;
       }
+
+    .footer_copyright, .footer_launching {
+        display: inline;
+    }
+    
+    .footer_launching {
+        right:0;
+    }
+
+    p.footer_launching{
+        text-align: right;
+    }
+
+    .copy_launching {
+        position:relative;
+        width: 100%;
+        color: #555555;
+    }
+    
+    .inlineLeft, .inlineRight {
+        position:absolute;
+        display: inline;
+    }
+    
+    .inlineRight {
+        right:0;
+    }
+
+    .inlineLeft p{
+        margin: 0rem;
+    }
+
+    .inlineRight p{
+        margin: 0rem;
+    }
+
+     
 }
