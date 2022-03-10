@@ -517,6 +517,10 @@ div.scrollmenu .nft_card {
         align-items: center;
       }
 
+      .redish{
+        color: #ff3998;
+      }
+
       .menu {
         display: flex;
         flex-direction: row;
@@ -524,6 +528,10 @@ div.scrollmenu .nft_card {
         margin: 0;
         padding: 0;
       }
+
+      #menu-toggle ~ .menu li a {
+         display: flex; 
+    }
 
       .no_other {
         width: 620px;
