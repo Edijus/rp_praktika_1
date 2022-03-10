@@ -626,6 +626,17 @@ div.scrollmenu .nft_card {
         right:0;
     }
 
+    .footer_links {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-auto-columns: 1fr;
+        grid-template-areas:
+          "about_title nft_title contact_title social_title"
+          "about OpenSea press twitter"
+          "terms maker support instagram"
+          "legal learn .. ..";
+      }
+
 
      
 }
