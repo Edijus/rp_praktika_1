@@ -493,6 +493,10 @@ footer {
   font-weight: 550;
 }
 
+.opensea_url a{
+    text-decoration: underline;
+}
+
 .margin_top_bottom {
   margin-top: 1rem;
   margin-bottom: 1rem;
