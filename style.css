@@ -519,7 +519,7 @@ div.scrollmenu .nft_card {
       }
 
       .top_nft_graphic {
-        left: 450px;
+        left: 610px;
         top: -110px;
         width: 400px;
       }
@@ -560,5 +560,22 @@ div.scrollmenu .nft_card {
 
       .miss_out{
           width: 100%;
+      }
+
+      .per_vidury_zalio{
+          display: none;
+      }
+
+      .bottom_nft_graphic {
+        left: 610px;
+        top: -17px;
+        width: 295px;
+      }
+
+      div.scrollmenu {
+          display: flex;
+          gap: 10%;
+          align-items: center;
+  justify-content: center;
       }
 }
