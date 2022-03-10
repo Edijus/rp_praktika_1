@@ -18,6 +18,18 @@ p {
   box-sizing: border-box;
 }
 
+.copy_launching {
+    color: #555555;
+}
+
+.inlineLeft p{
+    margin: 0rem;
+}
+
+.inlineRight p{
+    margin: 0rem;
+}
+
 .top-nav {
   display: flex;
   flex-direction: row;
@@ -614,13 +626,6 @@ div.scrollmenu .nft_card {
         right:0;
     }
 
-    .inlineLeft p{
-        margin: 0rem;
-    }
-
-    .inlineRight p{
-        margin: 0rem;
-    }
 
      
 }
