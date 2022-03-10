@@ -26,6 +26,7 @@ p {
   color: #fff;
   height: 50px;
   padding: 1em;
+  min-width: 100%;
 }
 
 .menu {
@@ -483,3 +484,7 @@ div.scrollmenu {
     text-decoration: none;
   }
   
+  .footer_copyright{
+      padding-top: 2rem;
+      padding-bottom: 3rem;
+  }
