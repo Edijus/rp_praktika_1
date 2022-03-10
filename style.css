@@ -19,21 +19,25 @@ p {
   box-sizing: border-box;
 }
 
-.footer_ex_links {  display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-auto-columns: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "ex_collection"
-      "footer_nav_links";
-  }
-  
-  .ex_collection { grid-area: ex_collection; }
-  
-  .footer_nav_links { grid-area: footer_nav_links; }
-  
+.footer_ex_links {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "ex_collection"
+    "footer_nav_links";
+}
+
+.ex_collection {
+  grid-area: ex_collection;
+}
+
+.footer_nav_links {
+  grid-area: footer_nav_links;
+}
 
 .copy_launching {
   color: #555555;
@@ -666,10 +670,9 @@ div.scrollmenu .nft_card {
     width: 40%;
   }
 
-  .footer_ex_links {  
+  .footer_ex_links {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    grid-template-areas:
-      "ex_collection footer_nav_links";
+    grid-template-areas: "ex_collection footer_nav_links";
   }
 }
