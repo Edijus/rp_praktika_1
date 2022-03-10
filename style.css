@@ -578,4 +578,12 @@ div.scrollmenu .nft_card {
           align-items: center;
   justify-content: center;
       }
+
+      .no_other_desktop{
+        font-size: 48px;
+      }
+
+      .bottom_nft{
+          padding-bottom: 6.4rem;
+      }
 }
