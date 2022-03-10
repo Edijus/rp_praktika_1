@@ -19,6 +19,11 @@ p {
   box-sizing: border-box;
 }
 
+.padding_top5{
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+}
+
 .after_items{
     padding-top: 5rem;
 }
@@ -666,7 +671,7 @@ div.scrollmenu .nft_card {
 
   .footer_links {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-auto-columns: 1fr;
     grid-template-areas:
       "about_title nft_title contact_title social_title"
