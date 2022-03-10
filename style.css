@@ -19,6 +19,10 @@ p {
   box-sizing: border-box;
 }
 
+.after_items{
+    padding-top: 5rem;
+}
+
 .footer_ex_links {
   display: grid;
   grid-template-columns: 1fr;
@@ -508,6 +512,7 @@ div.scrollmenu {
   overflow: auto;
   white-space: nowrap;
   padding: 1rem;
+  padding-bottom: 5rem;
 }
 
 div.scrollmenu .nft_card {
